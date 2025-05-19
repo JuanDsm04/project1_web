@@ -1,5 +1,5 @@
-import Display from './components/Display'
-import Keyboard from './components/Keyboard'
+import Display from './components/CalculatorDisplay/CalculatorDisplay'
+import Keyboard from './components/Keyboard/Keyboard'
 import useCalculator from './hooks/useCalculator'
 
 export default function App() {

@@ -1,0 +1,19 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  gap: 2px;
+}
+
+/* Esquinas redondeadas */
+.row:nth-child(5) button:first-child {
+  border-radius: 0 0 0 20px;
+}
+
+.row:nth-child(5) button:last-child {
+  border-radius: 0 0 20px 0;
+}
