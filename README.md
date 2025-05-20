@@ -1,12 +1,86 @@
-# React + Vite
+# Calculadora React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una calculadora desarrollada con React y Vite, que cumple con los requisitos académicos de diseño por componentes, testing, linting y funcionalidad específica.
 
-Currently, two official plugins are available:
+## Instalación
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Primero, asegúrate de tener [Bun](https://bun.sh/) instalado. Luego, en la raíz del proyecto:
 
-## Expanding the ESLint configuration
+```bash
+bun install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts disponibles
+
+Puedes usar los siguientes comandos para ejecutar, testear y verificar el código:
+
+```bash
+bun run dev         # Inicia el servidor de desarrollo con Vite
+bun run storybook   # Lanza Storybook para visualizar componentes
+bun run lint        # Ejecuta ESLint con las reglas definidas
+bun run test        # Corre los tests con Vitest
+```
+
+---
+
+## Requerimientos funcionales
+
+* **Interfaz:**
+
+  * Pantalla de visualización (Display).
+  * Teclado numérico con botones de HTML.
+  * Todo input se realiza desde los botones.
+
+* **Comportamiento:**
+
+  * Al presionar un número, se muestra en el display.
+  * Los siguientes números se concatenan a la derecha.
+  * Al presionar una operación, el display se limpia para el siguiente número.
+  * Al presionar una operación nuevamente, se muestra el resultado acumulado.
+  * Al presionar `=`, se muestra el resultado.
+
+* **Operaciones obligatorias:**
+
+  * Suma
+  * Resta
+  * Multiplicación
+  * Igualdad
+
+* **Condiciones adicionales:**
+
+  * El display no puede mostrar más de **9 caracteres**.
+  * Si el número es **negativo**, debe mostrar **ERROR**.
+  * Si el número es **mayor a 999999999**, debe mostrar **ERROR**.
+
+---
+
+## Funcionalidades extra implementadas
+
+* Punto decimal (`.`)
+* División (`/`)
+* Módulo (`%`)
+* Cambio de signo (`+/-`)
+* Hook personalizado para manejar parte de la lógica
+
+---
+
+## Linting
+
+* Se utiliza **ESLint** con configuración basada en **JavaScript Standard**.
+* Se prohíben los puntos y coma (`;`) como regla personalizada.
+* El comando `bun run lint` valida todos los archivos `.js` y `.jsx`.
+
+---
+
+## Testing
+
+* Pruebas implementadas con **Vitest** + **Testing Library**.
+* Ejecutar con `bun run test`.
+* Cada prueba no trivial suma puntos.
+
+---
+
+## Storybook
+
+* Historias de componentes implementadas usando **Storybook**.
+* Ejecutar con `bun run storybook`.
