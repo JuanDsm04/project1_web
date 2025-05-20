@@ -1,5 +1,5 @@
-import { fn } from '@storybook/test';
-import Button from './Button';
+import { fn } from '@storybook/test'
+import Button from './Button'
 
 export default {
   title: 'Calculator/Button',
@@ -15,22 +15,22 @@ export default {
   args: {
     onClick: fn(),
   },
-};
+}
 
 export const Digit = {
   args: {
     label: '7',
   },
-};
+}
 
 export const Operator = {
   args: {
     label: '+',
   },
-};
+}
 
 export const Action = {
   args: {
     label: 'AC',
   },
-};
+}

@@ -28,6 +28,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'semi': ['error', 'never'] // Regla para evitar el uso de punto y coma
     },
   },
 ]

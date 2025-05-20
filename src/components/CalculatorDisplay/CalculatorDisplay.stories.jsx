@@ -1,5 +1,4 @@
-import { fn } from '@storybook/test';
-import Display from './CalculatorDisplay';
+import Display from './CalculatorDisplay'
 
 export default {
   title: 'Calculator/Display',
@@ -14,21 +13,21 @@ export default {
   args: {
     value: '0',
   },
-};
+}
 
-const Template = (args) => <Display {...args} />;
+const Template = (args) => <Display {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   value: '0',
-};
+}
 
-export const ShowingNumber = Template.bind({});
+export const ShowingNumber = Template.bind({})
 ShowingNumber.args = {
   value: '12345',
-};
+}
 
-export const ShowingError = Template.bind({});
+export const ShowingError = Template.bind({})
 ShowingError.args = {
   value: 'ERROR',
-};
+}

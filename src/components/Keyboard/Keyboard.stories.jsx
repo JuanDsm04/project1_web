@@ -1,6 +1,6 @@
 
-import { fn } from '@storybook/test';
-import Keyboard from './Keyboard';
+import { fn } from '@storybook/test'
+import Keyboard from './Keyboard'
 
 export default {
   title: 'Calculator/Keyboard',
@@ -15,11 +15,11 @@ export default {
   args: {
     onButtonClick: fn(),
   },
-};
+}
 
-const Template = (args) => <Keyboard {...args} />;
+const Template = (args) => <Keyboard {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   onButtonClick: fn(),
-};
+}
